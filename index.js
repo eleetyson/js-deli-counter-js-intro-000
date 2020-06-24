@@ -11,3 +11,14 @@ function nowServing(line) {
     return (`Currently serving ${first}.`);
   }
 }
+
+function currentLine(line) {
+  let theLine = "The line is currently: ";
+  if (line.length === 0) {
+    return "The line is currently empty."
+  } else {
+    for (let z = 0; z < line.length; z++) {
+      theLine += `${z}. ${line[z]},`;
+    }
+  } return theLine;
+}
